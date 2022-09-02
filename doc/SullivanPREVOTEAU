@@ -1,1 +1,26 @@
-Création d'un fichier .md
+Semaine 1 
+
+Tâches effectuées: 
+- Création du Github et d'un fichier .md pour chacun
+- Brainstorming
+- Définition des tâches à effectuer puis répartition :
+  --> Carte électronique
+  --> Laser
+  --> Détection sonore
+  --> Traitement de l'image 
+  --> Moteurs pour le laser 
+
+
+
+
+- Test de la carte électronique du groupe de l'année d'avant
+  --> blocage sur un fichier .h non trouvable
+  --> carte sous-alimentée 2.8 V
+  --> carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
+  --> Soudure du module SPI
+ 
+ - Commencement de la partie moteur 
+  --> Test du moteur 
+
+Tâches à effectuer :
+- Avancer sur les tests de la carte électronique
