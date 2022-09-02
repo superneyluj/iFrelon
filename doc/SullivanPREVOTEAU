@@ -22,7 +22,7 @@ Partie hardware :
   --> Soudure du module SPI
  
  - Commencement de la partie moteur 
-  --> Test du moteur 
+  --> Test du moteur et montage du moteur
  - Commencement de la partie Laser
   --> Trouver un code pour tester le laser 
   
