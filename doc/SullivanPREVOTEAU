@@ -33,3 +33,6 @@ Semaine 2
 
 Tâches effectuées:
 - Test du code sur le laser -> OK 
+- Montage du moteur sur support 
+- Pour la partie intégration, on fait bouger la caméra avec le laser (le plan change et plus de problème de Z)
+- Changement de module de caméra 
