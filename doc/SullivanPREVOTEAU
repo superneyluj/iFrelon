@@ -38,9 +38,8 @@ Tâches effectuées:
 - Changement de module de caméra 
 
 Semaine 3
-(Julien absent)
 Tâches effectuées :
+- réflexion sur le code 
 - avancement du code du moteur, rédaction des fonctions suivantes :
     - conversion de X,Y pour remettre à l'échelle réelle (pixel -> angle)
     - move_moteur pour le faire bouger grâce aux coordonnées
-- 
