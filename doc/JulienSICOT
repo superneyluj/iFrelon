@@ -1,4 +1,4 @@
-Semaine 1 
+Séance 1 
 
 Tâches effectuées: 
 - Création du Github et d'un fichier .md pour chacun
@@ -28,3 +28,26 @@ Partie hardware :
   
 Tâches à effectuer :
 - Avancer sur les tests de la carte électronique
+
+Semaine 2 
+
+Partie hardware : 
+  --> Tentative de faire fonctionner la carte de la p20, nous avons réussi à faire fonctionner la partie conversion analogique/numérique.
+  mais impossible de faire fonctionner la partie caméra. 
+  --> Etude de la possibilité de réaliser le projet sur une autre carte. Nous avons trouvé celle ci : 
+  https://fr.aliexpress.com/item/1005004552128137.html?spm=a2g0o.order_list.0.0.66fb5e5b0Gbgdr&gatewayAdapt=glo2fra
+  elle embarque la caméra nativement, et elle possède des i/o libres afin de pouvoir utiliser les moteurs, le laser et une carte sd.
+  
+Semaine 3 :
+Partie hardware : 
+--> Mapping des i/o de la carte Carte ESP32-WROVER dev sur un fichier excel. Lecture de documentation
+
+Semaine 4 :
+Partie hardware : 
+--> Réception de la carte et dernière mise au point du fichier de mapping de la Carte ESP32-WROVER dev
+--> Branchement d'un module carte SD 
+Partie code :
+--> Nous avons réussi à faire fonctionner la caméra grâce à un server web sur un téléphone
+--> Nous avons réussi à faire du transfert de donnée sur la carte sd.
+
+Prochaine séance : réussir à stocker une photo sur la carte sd.
