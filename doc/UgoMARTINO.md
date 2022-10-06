@@ -77,4 +77,18 @@ Tâches effectuées :
   
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-Semaine 4
+Semaine 4 :
+-
+
+Tâches effectuées :
+- Réception de la nouvelle carte ESP32 et mise à jour du fichier de mapping de la Carte ESP32-WROVER dev afin de faire un point sur les entrées et sortis disponibles pour brancher nos composants externes
+- Installation des pilotes nécessaires pour la carte 
+- Mise en ouevre des codes Blink / CameraWebServer / VideoWebServer pour comprendre le focntionnement de la caméra   
+- Branchement d'un module de carte SD 
+- Branchement du module sur des I/O disponibles 
+- Mise en oeuvre d'un code ESP32_SD_V3 qui permet de définir le protocole de communication SPI, de créer un fichier pour l'enregistrer sur la carte SD 
+
+Objectif de la prochaine séance: réussir à stocker une photo sur la carte sd / créer un code regroupant le tout 
+Essayer de brancher un composant I2C 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
