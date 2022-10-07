@@ -33,9 +33,10 @@ Semaine 2   sonore c'est non
 -
 
 Tâches effectuées:
-- Test du code sur le laser -> OK 
-- Montage du moteur sur support 
-- Pour la partie intégration, on fait bouger la caméra avec le laser (le plan change tout le temps et plus de problème de Z)
+- La partie de la détection sonore est a mettre de côté pour le moment. Priorité sur le module de détection des frelons par analyse d'image.
+- Nous avons testé le laser.
+- Le moteur à été monté sur un support pour commencencer et début d'écriture du code pour commander son mouvement.
+- Pour la partie intégration, on fait bouger la caméra avec le laser (le plan change tout le temps et plus de problème de Z).
 - Changement de module de caméra 
 
 
