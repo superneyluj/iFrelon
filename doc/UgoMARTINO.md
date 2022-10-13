@@ -101,6 +101,8 @@ Paramètres de la carte :  Type de carte : ESP32 - Wrover Module
                           Flash frequency 80 Mhz
                           Partion schema : Huge App
                           
+https://randomnerdtutorials.com/esp32-cam-take-photo-save-microsd-card/                    
+                          
 - Ajustement de la gestion des pins disponibles pour permettre au module SD et la caméra de fonctionner ensemble
 - Création du code permettant de prendre une photo et de la stocker sur la carte SD voir code main_v1.h dans software 
 - Reconnaissance d'un écran LCD grâce au protocole I2C nous avons pour cela utiliser les sorties I2C de l'ESP32 et réalisé un SCAN afin d'identifier l'adresse du module 
