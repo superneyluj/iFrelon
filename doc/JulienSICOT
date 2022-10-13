@@ -60,3 +60,4 @@ Paramètres de la carte :  Type de carte : ESP32 - Wrover Module
 Partie code :
 --> Code qui permet de prendre une photo
 --> Prise d'une photo et transfert vers une carte SD
+--> Reconnaissance d'un écran LCD grâce au protocole I2C
