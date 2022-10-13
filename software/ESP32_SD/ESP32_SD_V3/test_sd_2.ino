@@ -1,9 +1,6 @@
-/*
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/esp32-microsd-card-arduino/
-  
-  This sketch can be found at: Examples > SD(esp32) > SD_Test
-*/
+/*********
+Projet HORNETKILLER POLYTECH 2021
+*********/
 
 #include "FS.h"
 #include "SD.h"
