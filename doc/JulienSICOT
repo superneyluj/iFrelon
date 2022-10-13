@@ -51,3 +51,12 @@ Partie code :
 --> Nous avons réussi à faire du transfert de donnée sur la carte sd.
 
 Prochaine séance : réussir à stocker une photo sur la carte sd.
+
+Semaine 5 :
+Paramètres de la carte :  Type de carte : ESP32 - Wrover Module
+                          Upload speed 115200
+                          Flash frequency 80 Mhz
+                          Partion schema : Huge App
+Partie code :
+--> Code qui permet de prendre une photo
+--> Prise d'une photo et transfert vers une carte SD
