@@ -92,3 +92,18 @@ Objectif de la prochaine séance: réussir à stocker une photo sur la carte sd 
 Essayer de brancher un composant I2C 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 5:
+-
+
+Paramètres de la carte :  Type de carte : ESP32 - Wrover Module
+                          Upload speed 115200
+                          Flash frequency 80 Mhz
+                          Partion schema : Huge App
+                          
+- Ajustement de la gestion des pins disponibles pour permettre au module SD et la caméra de fonctionner ensemble
+- Création du code permettant de prendre une photo et de la stocker sur la carte SD voir code main_v1.h dans software 
+- Reconnaissance d'un écran LCD grâce au protocole I2C nous avons pour cela utiliser les sorties I2C de l'ESP32 et réalisé un SCAN afin d'identifier l'adresse du module 
+
+Objectif de la prochaine séance: intégrer l'écran LCD au code existant et y faire afficher l'image, prévoir une synoptique d'une carte électronique à réaliser pour compiler toutes les sorties.
+
