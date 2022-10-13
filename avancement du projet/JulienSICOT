@@ -61,3 +61,5 @@ Partie code :
 --> Code qui permet de prendre une photo
 --> Prise d'une photo et transfert vers une carte SD
 --> Reconnaissance d'un écran LCD grâce au protocole I2C
+
+Prochaine séance : faire fonctionner l'i2c en même temps que la prise de photo pour observer un éventuel conflit
