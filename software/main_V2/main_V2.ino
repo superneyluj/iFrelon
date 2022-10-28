@@ -128,6 +128,20 @@ void setup() {
   }
 
 
+
+  display.init();
+  display.flipScreenVertically();
+  display.setFont(ArialMT_Plain_10);
+
+  Serial.println("//------------Fin Initialisation-------------//");
+
+}
+
+
+void loop() {
+
+  //partie caméra
+
   camera_fb_t * fb = NULL;
 
   fb = esp_camera_fb_get();  
@@ -162,24 +176,17 @@ void setup() {
   file.close();
   esp_camera_fb_return(fb);
 
-  display.init();
-  display.flipScreenVertically();
-  display.setFont(ArialMT_Plain_10);
 
-  Serial.println("//------------Fin Initialisation-------------//");
-
-}
-
-
-void loop() {
   
-  // clear the display
+  // partie écran
   display.clear();
-
   display.setTextAlignment(TEXT_ALIGN_LEFT);
   display.setFont(ArialMT_Plain_16);
-  display.drawString(0, 0,"Photo Prise");
+  display.drawString(0, 0,"Photo Prise " + String(pictureNumber) );
   display.display();
+
+  //tempo d'1s
+  delay(1000);
 
 }
 
