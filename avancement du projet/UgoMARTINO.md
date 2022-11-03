@@ -109,3 +109,17 @@ https://randomnerdtutorials.com/esp32-cam-take-photo-save-microsd-card/
 
 Objectif de la prochaine séance: intégrer l'écran LCD au code existant et y faire afficher l'image, prévoir une synoptique d'une carte électronique à réaliser pour compiler toutes les sorties.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 6 :
+-
+
+Partie code : 
+- Mise en oeuvre de l'écran I2C sur les pins SDA et SCL du freenove 
+- Mise en place du code permettant de regouprer la prise de la photo, le module I2C ainsi que le le module carte SD
+- Finalisation de la séance par la création du Soft main_V2 
+- Le code main_V2 permet de prendre une photo toutes les seconde, la stock sur la carte sd et affiche du texte sur un écran en I2C. Pas de conflit
+Utilisation de la librairie : ESP8266 and ESP32 OLED driver
+
+Objectif de la prochaine séance : concevoir une carte électronique avec le freenove / le module SD / le convertisseur analogique numérique / les LEDS
+
