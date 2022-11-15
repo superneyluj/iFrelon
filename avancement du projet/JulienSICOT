@@ -63,3 +63,10 @@ Partie code :
 --> Reconnaissance d'un écran LCD grâce au protocole I2C
 
 Prochaine séance : faire fonctionner l'i2c en même temps que la prise de photo pour observer un éventuel conflit
+
+Semaine 6 :
+Partie code : 
+--> Le code main_V2 permet de prendre une photo toutes les seconde, la stock sur la carte sd et affiche du texte sur un écran en I2C. Pas de conflit
+Utilisation de la librairie : ESP8266 and ESP32 OLED driver
+
+Prochaine séance : faire une carte avec le freenove, la carte sd et le convertisseur analogique numérique
