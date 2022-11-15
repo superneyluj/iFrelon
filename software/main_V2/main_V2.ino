@@ -36,8 +36,6 @@
 #define CLK 13
 #define SS 2
 
-//#include "camera_pins.h"
-
 #define PWDN_GPIO_NUM    -1
 #define RESET_GPIO_NUM   -1
 #define XCLK_GPIO_NUM    21
@@ -59,11 +57,7 @@
 camera_config_t config;
 int pictureNumber = 0;
 
-//void config_init();
-
-
 #define CAMERA_MODEL_WROVER_KIT
-
 
 SSD1306Wire display(0x3c, SDA, SCL);   
 
