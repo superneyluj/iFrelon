@@ -68,5 +68,7 @@ Nous avons commencé à étudier la piste que l'on nous a donné : https://eloqu
 C'est un projet d'EloquentArduino qui a travaillé sur la détection d'objet avec un ESP-32, qui pourrait nous permettre de faire de la reconnaissance de frelon (et ainsi ne pas les confondres avec des abeilles).  
 Dans un premier temps, l'objectif serait de faire un test en entrainant l'algo avec une forme simple pour voir si c'est une solution viable.  
 
+Cependant, il nous restera probablement le problème de la position du frelon à determiner.
+
 Prochaine séance : Finir de mettre en place la détection de frelon + entrainement sur une forme simple.
 
