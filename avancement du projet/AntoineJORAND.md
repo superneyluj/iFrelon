@@ -62,8 +62,11 @@ Prochaine séance : réussir à stocker une photo sur la carte sd.
 
 Semaine 7
 -
-Nous avons réparti les tâches en deux groupes. Un groupe travaillait sur la carte freenove, l'autre sur le code de la détection de Frelon sur une photo.  
-Analyse d'image sur ESP-32 :  
+Nous avons réparti les tâches en deux groupes. Un groupe travaillait sur la carte freenove, l'autre sur le code de l'analyse d'image sur ESP-32.  
+- Analyse d'image sur ESP-32 :  
 Nous avons commencé à étudier la piste que l'on nous a donné : https://eloquentarduino.com/portfolio/esp32-cam-image-recognition/  
-C'est un projet d'EloquentArduino qui a travaillé sur la détection d'objet avec un ESP-32.  
+C'est un projet d'EloquentArduino qui a travaillé sur la détection d'objet avec un ESP-32, qui pourrait nous permettre de faire de la reconnaissance de frelon (et ainsi ne pas les confondres avec des abeilles).  
+Dans un premier temps, l'objectif serait de faire un test en entrainant l'algo avec une forme simple pour voir si c'est une solution viable.  
+
+Prochaine séance : Finir de mettre en place la détection de frelon + entrainement sur une forme simple.
 
