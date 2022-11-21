@@ -51,6 +51,7 @@ Tâches effectuées :
 
 
 Semaine 4
+-
 - Nous avons reçu la nouvelle carte ESP32-WROVER dev
 - Branchement d'un module carte SD
 - Test du module de caméra avec les codes de tests. Nous avons récupéré l'image de la caméra sur un serveur web.
