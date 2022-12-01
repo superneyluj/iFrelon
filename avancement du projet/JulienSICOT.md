@@ -10,17 +10,17 @@
     4. Traitement de l'image 
     5. Moteurs pour le laser
   - Test de la carte électronique du groupe de l'année précédente
-###  - Partie moteur :
-    - Test des moteurs et montages des moteurs
+###  Partie moteur :
+  - Test des moteurs et montages des moteurs
 ###  - Partie laser :
-    - Rédaction du code pour tester le laser
-###  - Partie software :
-    - blocage sur un fichier .h introuvable
-    - mauvaise version de librairie
-###  - Partie hardware:
-    - carte sous alimentée (2,8V)
-    - carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
-    - Soudure du module SPI
+  - Rédaction du code pour tester le laser
+###  Partie software :
+  - blocage sur un fichier .h introuvable
+  - mauvaise version de librairie
+###  Partie hardware:
+  - carte sous alimentée (2,8V)
+  - carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
+  - Soudure du module SPI
 ## 2 septembre
   - Partie hardware:
     - Tentative de faire fonctionner la carte de la p20:
