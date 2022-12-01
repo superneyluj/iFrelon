@@ -49,30 +49,21 @@
 > - Upload speed : 115200
 > - Flash Frequency 80 Mhz
 > - Partie scheme : Huge app
-* 13 octobre
-* 28 octobre
-* 18 novembre
-* 25 novembre
-* 1er décembre
-
-
-
-
-Semaine 5 :
-Paramètres de la carte :  Type de carte : ESP32 - Wrover Module
-                          Upload speed 115200
-                          Flash frequency 80 Mhz
-                          Partion schema : Huge App
-Partie code :
---> Code qui permet de prendre une photo
---> Prise d'une photo et transfert vers une carte SD
---> Reconnaissance d'un écran LCD grâce au protocole I2C
-
-Prochaine séance : faire fonctionner l'i2c en même temps que la prise de photo pour observer un éventuel conflit
-
-Semaine 6 :
-Partie code : 
---> Le code main_V2 permet de prendre une photo toutes les seconde, la stock sur la carte sd et affiche du texte sur un écran en I2C. Pas de conflit
-Utilisation de la librairie : ESP8266 and ESP32 OLED driver
-
-Prochaine séance : faire une carte avec le freenove, la carte sd et le convertisseur analogique numérique
+## 13 octobre
+### Partie software
+  - Le code main_V2 permet de prendre une photo toutes les seconde, la stock sur la carte sd et affiche du texte sur un écran en I2C. Pas de conflit
+> Utilisation de la librairie : ESP8266 and ESP32 OLED driver
+## 28 octobre
+### Partie hardware
+  - Réalisation d'une carte électronique avec EesyEDA comprenant la freenove, le module sd, le convertisseur analogique numérique et le module de contrôle PWM
+## 18 novembre
+### Partie hardware
+  - Poursuite de la réalisation de la carte électronique
+## 25 novembre
+### Partie hardware
+  - Finalisation du routage de la carte
+### Partie mécanique
+  - Réalisation du auvent qui accueillera notre système afin de sécuriser le laser.
+## 1er décembre
+### Partie hardware
+  - Finalisation du routage de la carte électronique et commande du PCB et 
