@@ -1,22 +1,22 @@
  **Projet Hornet Killer** 
 - 
 * 1er septembre.
-      - Création du Github et d'un fichier .md pour chacun
-      - Brainstorming
-      - Définition des tâches à effectuer puis répartition :
-        1. Carte électronique
-        2. Laser
-        3. Détection sonore
-        4. Traitement de l'image 
-        5. Moteurs pour le laser
-      - Test de la carte électronique du groupe de l'année précédente
-      - Partie software :
-        - blocage sur un fichier .h introuvable
-        - mauvaise version de librairie
-        - Partie hardware:
-        - carte sous alimentée (2,8V)
-        - carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
-        - Soudure du module SPI
+  - Création du Github et d'un fichier .md pour chacun
+  - Brainstorming
+  - Définition des tâches à effectuer puis répartition :
+    1. Carte électronique
+    2. Laser
+    3. Détection sonore
+    4. Traitement de l'image 
+    5. Moteurs pour le laser
+  - Test de la carte électronique du groupe de l'année précédente
+  - Partie software :
+    - blocage sur un fichier .h introuvable
+    - mauvaise version de librairie
+    - Partie hardware:
+    - carte sous alimentée (2,8V)
+    - carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
+    - Soudure du module SPI
 * 2 septembre
 * 9 septembre
 * 15 septembre
