@@ -1,6 +1,6 @@
 <strong> Projet Hornet Killer </strong>
 -
-* 1er septembre
+* 1er septembre.
 Tâches effectuées: 
   - Création du Github et d'un fichier .md pour chacun
   - Brainstorming
