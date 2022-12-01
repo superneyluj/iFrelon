@@ -1,6 +1,6 @@
  **Projet Hornet Killer** 
 - 
-* <u>1er septembre.</u>
+* <ins>1er septembre.</ins>
       - Création du Github et d'un fichier .md pour chacun
       - Brainstorming
       - Définition des tâches à effectuer puis répartition :
