@@ -10,6 +10,10 @@
     4. Traitement de l'image 
     5. Moteurs pour le laser
   - Test de la carte électronique du groupe de l'année précédente
+  - Partie moteur :
+    - Test des moteurs et montages des moteurs
+  - Partie laser :
+    - Rédaction du code pour tester le laser
   - Partie software :
     - blocage sur un fichier .h introuvable
     - mauvaise version de librairie
@@ -18,9 +22,33 @@
     - carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
     - Soudure du module SPI
 * 2 septembre
+  - Partie hardware:
+    - Tentative de faire fonctionner la carte de la p20:
+      - Conversion analogique/numérique OK
+      - Impossible de faire fonctionner la caméra
+    - Etude de la possibilité de réaliser le projet sur une autre carte.
+      - la carte étudiée :  https://fr.aliexpress.com/item/1005004552128137.html?spm=a2g0o.order_list.0.0.66fb5e5b0Gbgdr&gatewayAdapt=glo2fra
+      - elle embarque la caméra nativement, et elle possède des i/o libres afin de pouvoir utiliser les moteurs, le laser et une carte sd.
 * 9 septembre
+  - Partie hardware :
+    - Mapping des i/o de la carte Carte ESP32-WROVER dev sur un fichier excel. Lecture de documentation
 * 15 septembre
+  - Partie hardware : 
+    - Réception de la carte et dernière mise au point du fichier de mapping de la Carte ESP32-WROVER dev
+    - Branchement d'un module carte SD 
+  - Partie software :
+    - camera sur serveur web avec téléphone OK
+    - transfert des données sur carte SD OK
 * 3 octobre
+  - Partie software :
+    - Code qui permet de prendre une photo OK
+    - Prise d'une photo et transfert vers carte SD OK
+    - Reconnaissance d'un écran LCD avec protocole I2C OK
+> Paramètres de la carte freenove : 
+> - Type de carte : ESP32 - Wrover Module
+> - Upload speed : 115200
+> - Flash Frequency 80 Mhz
+> - Partie scheme : Huge app
 * 13 octobre
 * 28 octobre
 * 18 novembre
@@ -29,60 +57,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-Séance 1 
-
-
-- Test de la carte électronique du groupe de l'année d'avant
-
-Partie code :
-  --> blocage sur un fichier .h non trouvable
-  --> mauvaise version de librairie
-
-Partie hardware :
-  --> carte sous-alimentée 2.8 V
-  --> carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
-  --> Soudure du module SPI
- 
- - Commencement de la partie moteur 
-  --> Test du moteur et montage du moteur
- - Commencement de la partie Laser
-  --> Trouver un code pour tester le laser 
-  
-Tâches à effectuer :
-- Avancer sur les tests de la carte électronique
-
-Semaine 2 
-
-Partie hardware : 
-  --> Tentative de faire fonctionner la carte de la p20, nous avons réussi à faire fonctionner la partie conversion analogique/numérique.
-  mais impossible de faire fonctionner la partie caméra. 
-  --> Etude de la possibilité de réaliser le projet sur une autre carte. Nous avons trouvé celle ci : 
-  https://fr.aliexpress.com/item/1005004552128137.html?spm=a2g0o.order_list.0.0.66fb5e5b0Gbgdr&gatewayAdapt=glo2fra
-  elle embarque la caméra nativement, et elle possède des i/o libres afin de pouvoir utiliser les moteurs, le laser et une carte sd.
-  
-Semaine 3 :
-Partie hardware : 
---> Mapping des i/o de la carte Carte ESP32-WROVER dev sur un fichier excel. Lecture de documentation
-
-Semaine 4 :
-Partie hardware : 
---> Réception de la carte et dernière mise au point du fichier de mapping de la Carte ESP32-WROVER dev
---> Branchement d'un module carte SD 
-Partie code :
---> Nous avons réussi à faire fonctionner la caméra grâce à un server web sur un téléphone
---> Nous avons réussi à faire du transfert de donnée sur la carte sd.
-
-Prochaine séance : réussir à stocker une photo sur la carte sd.
 
 Semaine 5 :
 Paramètres de la carte :  Type de carte : ESP32 - Wrover Module
