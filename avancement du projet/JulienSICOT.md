@@ -1,5 +1,4 @@
 # **Projet Hornet Killer**
--
 * <u>1er septembre.</u>
       - Création du Github et d'un fichier .md pour chacun
       - Brainstorming
