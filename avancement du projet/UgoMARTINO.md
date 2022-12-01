@@ -123,3 +123,24 @@ Utilisation de la librairie : ESP8266 and ESP32 OLED driver
 
 Objectif de la prochaine séance : concevoir une carte électronique avec le freenove / le module SD / le convertisseur analogique numérique / les LEDS
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 7 :
+-
+
+Cours en visio 
+Conception de la carte électronique sur EasyEda
+-Mise en place des librairies
+-Recherche des composants 
+-conception du schèma 
+-vérification et approbation par M Peter 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 8 :
+-
+
+-Finalisation du routage de la carte 
+-Création du auvent au FabLab (reflexion, conception, réalisaton) découpe du bois, des tasseaux etc 
+
+
