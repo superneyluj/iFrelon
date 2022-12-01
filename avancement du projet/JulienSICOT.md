@@ -13,7 +13,7 @@
   - Partie software :
     - blocage sur un fichier .h introuvable
     - mauvaise version de librairie
-    - Partie hardware:
+  - Partie hardware:
     - carte sous alimentée (2,8V)
     - carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
     - Soudure du module SPI
