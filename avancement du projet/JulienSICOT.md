@@ -1,6 +1,6 @@
 # Projet Hornet Killer 
 
-## 1er septembre.
+## 1er septembre
   - Création du Github et d'un fichier .md pour chacun
   - Brainstorming
   - Définition des tâches à effectuer puis répartition :
@@ -10,19 +10,19 @@
     4. Traitement de l'image 
     5. Moteurs pour le laser
   - Test de la carte électronique du groupe de l'année précédente
-###  Partie moteur :
+###  Partie moteur 
   - Test des moteurs et montages des moteurs
-###  Partie laser :
+###  Partie laser 
   - Rédaction du code pour tester le laser
-###  Partie software :
+###  Partie software 
   - Blocage sur un fichier .h introuvable
   - Mauvaise version de librairie
-###  Partie hardware:
+###  Partie hardware
   - Carte sous alimentée (2,8V)
   - Carte SD non utilisable directement sur la carte électronique, y ajouter un module SPI
   - Soudure du module SPI
 ## 2 septembre
-### Partie hardware:
+### Partie hardware
   - Tentative de faire fonctionner la carte de la p20:
       - Conversion analogique/numérique OK
       - Impossible de faire fonctionner la caméra
@@ -30,17 +30,17 @@
       - la carte étudiée :  https://fr.aliexpress.com/item/1005004552128137.html?spm=a2g0o.order_list.0.0.66fb5e5b0Gbgdr&gatewayAdapt=glo2fra
       - elle embarque la caméra nativement, et elle possède des i/o libres afin de pouvoir utiliser les moteurs, le laser et une carte sd.
 ## 9 septembre
-### Partie hardware :
+### Partie hardware 
   - Mapping des i/o de la carte Carte ESP32-WROVER dev sur un fichier excel. Lecture de documentation
 ## 15 septembre
-### Partie hardware : 
+### Partie hardware 
   - Réception de la carte et dernière mise au point du fichier de mapping de la Carte ESP32-WROVER dev
   - Branchement d'un module carte SD 
-### Partie software :
+### Partie software 
   - camera sur serveur web avec téléphone OK
   - transfert des données sur carte SD OK
 ## 3 octobre
-### Partie software :
+### Partie software 
   - Code qui permet de prendre une photo OK
   - Prise d'une photo et transfert vers carte SD OK
   - Reconnaissance d'un écran LCD avec protocole I2C OK
