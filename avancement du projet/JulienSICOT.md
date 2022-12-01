@@ -1,3 +1,37 @@
+<strong> Projet Hornet Killer </strong>
+-
+* 1er septembre
+Tâches effectuées: 
+- Création du Github et d'un fichier .md pour chacun
+- Brainstorming
+- Définition des tâches à effectuer puis répartition :
+1. Carte électronique
+2. Laser
+3. Détection sonore
+4. Traitement de l'image 
+5. Moteurs pour le laser 
+* 2 septembre
+* 9 septembre
+* 15 septembre
+* 3 octobre
+* 13 octobre
+* 28 octobre
+* 18 novembre
+* 25 novembre
+* 1er décembre
+
+
+
+
+
+
+
+
+
+
+
+
+
 Séance 1 
 
 Tâches effectuées: 
