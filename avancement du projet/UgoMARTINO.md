@@ -143,4 +143,29 @@ Semaine 8 :
 -Finalisation du routage de la carte 
 -Création du auvent au FabLab (reflexion, conception, réalisaton) découpe du bois, des tasseaux etc 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 9 :
+-
+
+-Finalisation de la conception du auvent (création de la boite sur le coté pour y fixer la carte et les moteurs)
+-Test d'une carte similaire à Freenove 
+-Création du fichier regroupant tous les composants de la carte éléctronique 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 10:
+-
+
+-Récéption de la carte élétronique 
+-Désousadage des composants sur anciennes carte du projet
+-Soudure des nouveaux composants CMS sur cartes avec four au FabLab 
+-Soudure des composants Freenove, module SD et header 
+-Test de la carte 
+  Programme pour les LEDs (clignotement, chenillard ...)
+  Programme pour l'ADC avec une photo-résitance
+ 
+ 
+
+
 
