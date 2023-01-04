@@ -66,4 +66,15 @@
   - Réalisation du auvent qui accueillera notre système afin de sécuriser le laser.
 ## 1er décembre
 ### Partie hardware
-  - Finalisation du routage de la carte électronique et commande du PCB et 
+  - Finalisation du routage de la carte électronique et commande du PCB
+  - Création du auvent en bois au FabLab (conception, réalisation)
+  - Création d'un fichier regroupant tous les composants électroniques à souder sur le PCB
+## 20 décembre
+### Partie hardware
+  - Réception du PCB
+  - Cannibalisation des anciennes cartes pour récupérer les composants nécessaires
+  - Soudure des composants CMS avec le four au FabLab
+  - Soudure de l'ESP32 Freenove, du module SD et des headers
+### Partie software
+  - Test de la carte (clignotement LED, chenillard) OK
+  - Test de l'ADC avec la photoresistance OK
