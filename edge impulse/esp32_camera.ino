@@ -92,7 +92,7 @@ static camera_config_t camera_config = {
 
     .jpeg_quality = 12, //0-63 lower number means higher quality
     .fb_count = 1,       //if more than one, i2s runs in continuous mode. Use only with JPEG
-    .fb_location = CAMERA_FB_IN_DRAM,
+    .fb_location = CAMERA_FB_IN_PSRAM,
     .grab_mode = CAMERA_GRAB_WHEN_EMPTY,
 };
 
@@ -146,22 +146,16 @@ void loop()
     }
 
 
-    
-
     ei::signal_t signal;
     signal.total_length = EI_CLASSIFIER_INPUT_WIDTH * EI_CLASSIFIER_INPUT_HEIGHT;
     signal.get_data = &ei_camera_get_data;
-       ei_printf("Print 1 \n");
 
 
     if (ei_camera_capture((size_t)EI_CLASSIFIER_INPUT_WIDTH, (size_t)EI_CLASSIFIER_INPUT_HEIGHT, snapshot_buf) == false) {
-        ei_printf("Print 1.1 \n");
         ei_printf("Failed to capture image\r\n");
         free(snapshot_buf);
         return;
     }
-
-    ei_printf("Print 1 \n");
 
     // Run the classifier
     ei_impulse_result_t result = { 0 };
@@ -175,7 +169,6 @@ void loop()
     // print the predictions
     ei_printf("Predictions (DSP: %d ms., Classification: %d ms., Anomaly: %d ms.): \n",
                 result.timing.dsp, result.timing.classification, result.timing.anomaly);
-ei_printf("Print 2 \n");
 #if EI_CLASSIFIER_OBJECT_DETECTION == 1
     bool bb_found = result.bounding_boxes[0].value > 0;
     for (size_t ix = 0; ix < result.bounding_boxes_count; ix++) {
@@ -201,7 +194,6 @@ ei_printf("Print 2 \n");
 
 
     free(snapshot_buf);
-    ei_printf("Print 3 \n");
 }
 
 /**
@@ -292,11 +284,6 @@ bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf
         return false;
     }
    
-    for(i=0;i<100000;i++){
-        snapshot_buf[i]=1;
-    }
-
-
    bool converted = fmt2rgb888(fb->buf, fb->len, PIXFORMAT_JPEG, snapshot_buf);
 
    esp_camera_fb_return(fb);
@@ -306,13 +293,10 @@ bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf
        return false;
    }
 
-   ei_printf("Ei capt print 2 \n");
-
     if ((img_width != EI_CAMERA_RAW_FRAME_BUFFER_COLS)
         || (img_height != EI_CAMERA_RAW_FRAME_BUFFER_ROWS)) {
         do_resize = true;
     }
-     ei_printf("Ei capt print 3\n");
 
     if (do_resize) {
         ei::image::processing::crop_and_interpolate_rgb888(
