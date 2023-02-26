@@ -20,9 +20,6 @@
 
 #define EEPROM_SIZE 1
 
-//Pin I2C Ecran
-#define SDA 26
-#define SCL 27
 
 //Pins module Carte SD 
 #define MOSI 14
@@ -30,7 +27,6 @@
 #define CLK 13
 #define SS 33
 
-//#include "camera_pins.h"
 
 #define PWDN_GPIO_NUM    -1
 #define RESET_GPIO_NUM   -1
@@ -51,6 +47,8 @@
 #define PCLK_GPIO_NUM    22
 
 camera_config_t config;
+
+
 
 File root;
 int DeletedCount = 0;
@@ -214,58 +212,3 @@ void countingFiles(File dir, int numTabs) {
   }
 }
 
-void removeFiles(File dir, String tempPath) {
-  while(true) {
-    File entry =  dir.openNextFile();
-    String localPath;
-
-    Serial.println("");
-    if (entry) {
-      if ( entry.isDirectory() )
-      {
-        localPath = tempPath + entry.name() + rootpath + '\0';
-        char folderBuf[localPath.length()];
-        localPath.toCharArray(folderBuf, localPath.length() );
-        removeFiles(entry, folderBuf);
-
-
-        if( SD.rmdir( folderBuf ) )
-        {
-          Serial.print("Deleted folder ");
-          Serial.println(folderBuf);
-          FolderDeleteCount++;
-        } 
-        else
-        {
-          Serial.print("Unable to delete folder ");
-          Serial.println(folderBuf);
-          FailCount++;
-        }
-      } 
-      else
-      {
-        localPath = tempPath + entry.name() + '\0';
-        char charBuf[localPath.length()];
-        localPath.toCharArray(charBuf, localPath.length() );
-
-        if( SD.remove( charBuf ) )
-        {
-          Serial.print("Deleted ");
-          Serial.println(localPath);
-          DeletedCount++;
-        } 
-        else
-        {
-          Serial.print("Failed to delete ");
-          Serial.println(localPath);
-          FailCount++;
-        }
-
-      }
-    } 
-    else {
-      // break out of recursion
-      break;
-    }
-  }
-}
