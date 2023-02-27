@@ -1,7 +1,6 @@
 /*
   Projet Electronique 
   PREVOTEAU, GRONDIN, JORAND, SICOT, MARTINO
-
   Code permettant
   -initialisation de la caméra 
   -Initialisation du module SD
@@ -51,13 +50,7 @@ camera_config_t config;
 
 
 File root;
-int DeletedCount = 0;
-int FolderDeleteCount = 0;
-int FailCount = 0;
-String rootpath = "/";
 int fileCountOnSD = 0; // for counting files
-
-//void config_init();
 
 
 #define CAMERA_MODEL_WROVER_KIT
@@ -129,7 +122,16 @@ void setup() {
   Serial.println(F("fileCountOnSD: "));
   Serial.println(fileCountOnSD);
 
-  removeFiles(root,rootpath);
+  for(int i=1;i<=fileCountOnSD;i++){
+    String stringToDelete = "picture"+String(i)+".jpg";
+    if(SD.exists(stringToDelete.c_str())){
+      SD.remove(stringToDelete.c_str());
+    }
+    else{
+      Serial.println("no file to remove");
+    }
+  }
+
   countingFiles(root, 0);
   Serial.println("after remove : ");
   Serial.println(fileCountOnSD);
@@ -211,4 +213,3 @@ void countingFiles(File dir, int numTabs) {
     fileCountOnSD++;
   }
 }
-
