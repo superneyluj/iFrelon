@@ -1,120 +1,83 @@
+#include <Wire.h>
 
+// Include Adafruit PCA9685 Servo Library
+#include <Adafruit_PWMServoDriver.h>
 
-#include <Servo.h> 
-float pixel_axe_X = 800;
-float pixel_axe_y = 600;
-float angle_camera_X = 66;
-float angle_camera_Y = 50;
-void move_moteur(float coordX, float coordY);
-float current_angleX = 0;
-float current_angleY = 0;
-float init_coordX=90;
-float init_coordY=90;
-int time_shoot = 2000;
-int laserPin = A2;
-int angleMaxX = 60;
-int angleMaxY = 60;
+// Creat object to represent PCA9685 at default I2C address
+Adafruit_PWMServoDriver pca9685 = Adafruit_PWMServoDriver(0x40);
 
-float conversion_coord_deg(float coord, float minPixel, float maxPixel, float minAngle, float maxAngle);
-void return_to_initial_coords();
-Servo servo1; // Axe X
-Servo servo2; //Axe Y
-float angleX = 0;
-float angleY = 0;
+// Define maximum and minimum number of "ticks" for the servo motors
+// Range from 0 to 4095
+// This determines the pulse width
+
+#define SDA 26
+#define SCL 27 
+
+//Valeur 0° 90° 180° moteur vertical
+#define SERVOMIN_1  100  // Minimum value
+#define SERVOMAX_1  520  // Maximum value
+#define SERVOMID_1  310  // Middle value
+
+//Valeur 0° 90° 180° moteur horizontal
+#define SERVOMIN_2  125  // Minimum value
+#define SERVOMAX_2  455  // Maximum value
+#define SERVOMID_2  280  // Middle value
+
+// Define servo motor connections (expand as required)
+#define SER0  0   //Servo Motor 0 on connector 0
+#define SER1  1  //Servo Motor 1 on connector 12
+
+// Variables for Servo Motor positions (expand as required)
+int pwm0;
+int pwm1;
 
 void setup() {
-  servo1.attach(3);
-  servo2.attach(9);
-  servo1.write(init_coordX);
-  servo2.write(init_coordY);
-  pinMode(laserPin,OUTPUT);
-   //digitalWrite(laserPin, HIGH);
-  delay(3000);
-  Serial.begin(9600); 
+
+  // Serial monitor setup
+  Wire.begin(SDA , SCL);
+  Serial.begin(115200);
+
+  // Print to monitor
+  Serial.println("PCA9685 Servo Test");
+
+  // Initialize PCA9685
+  pca9685.begin();
+
+  // Set PWM Frequency to 50Hz
+  pca9685.setPWMFreq(50);
+
 }
 
-/*void loop() {
- move_moteur(-300,-200);
-  shoot(2000);
-  
-  return_to_initial_coords();
-  delay(2000);
-  
+void loop() {
 
-}*/
+  //MIN Moteur vertical
+  pca9685.setPWM(SER0, 0,SERVOMIN_1 );
+  Serial.println(SERVOMIN_2);
+  delay(5000);
 
-void loop(){
-  if(1){
-    decision();
-   }
+  //MID Moteur vertical
+  pca9685.setPWM(SER0, 0,SERVOMID_1 );
+  Serial.println(SERVOMID_2);
+  delay(5000);
+
+  //MAX Moteur vertical
+  pca9685.setPWM(SER0, 0,SERVOMAX_1 );
+  Serial.println(SERVOMAX_2);
+  delay(5000);
+
+  //MIN Moteur horizontal
+  pca9685.setPWM(SER0, 0,SERVOMIN_2 );
+  Serial.println(SERVOMIN_2);
+  delay(5000);
+
+  //MID Moteur horizontal
+  pca9685.setPWM(SER0, 0,SERVOMID_2 );
+  Serial.println(SERVOMID_2);
+  delay(5000);
+
+  //MAX Moteur horizontal
+  pca9685.setPWM(SER0, 0,SERVOMAX_2 );
+  Serial.println(SERVOMAX_2);
+  delay(5000);
+ 
 }
-
-void move_moteur(float coordX, float coordY){
-  // 90 < angleY < 180
-  float angleX = current_angleX + conversion_coord_deg(coordX,-pixel_axe_X/2,pixel_axe_X/2,-angle_camera_X/2,angle_camera_X/2);
-  float angleY = current_angleY + conversion_coord_deg(coordY,-pixel_axe_y/2,pixel_axe_y/2,-angle_camera_Y/2,angle_camera_Y/2);
-   
-  //Gestion des angles maximums
-  if(angleX > angleMaxX)angleX = angleMaxX;
-  if(angleX < -angleMaxX)angleX = -angleMaxX;
-  if(angleY > angleMaxY)angleY= angleMaxY;
-  if(angleY < -angleMaxY)angleY = -angleMaxY;
-
-  //On bouge les moteurs
-  servo1.write((angleX)+90); 
-  servo2.write(-(angleY)+90);
-
-  //le current_angle devient prend la valeur du dernier angle calculé 
-  current_angleX = angleX;
-  current_angleY = angleY;
-  
-}
-
-float conversion_coord_deg(float coord, float minPixel, float maxPixel, float minAngle, float maxAngle){
-  return (coord - minPixel) * (maxAngle - minAngle) / (maxPixel - minPixel) + minAngle;
-}
-
-void return_to_initial_coords(){
-  servo1.write(init_coordX);
-  servo2.write(init_coordY);
-  current_angleX = 0;
-  current_angleY = 0;
-  
-}
-
-
-
-void decision(){
-    /*int x1 = coordFromCameraX();
-    int y1 = coordFromCameraY();*/
-
-    int x1 = 300;
-    int y1 = 300;
-
-    move_moteur(x1,y1);
-
-    /*int x2 = coordFromCameraX();
-    int y2 = coordFromCameraY();*/
-
-    int x2 = 300;
-    int y2 = 300;
-    if(x2 - x1 < 0.1 && y2 - y1 < 0.1){
-      shoot(time_shoot);
-      return_to_initial_coords();
-      delay(1000); //Delay pour laisser au moteur le temps de revenir au coord initiales
-
-      
-    }else{
-      Serial.println("Decision()");
-      decision();
-    } 
-}
-
-
-void shoot(int time_shoot) {
-  digitalWrite(laserPin, HIGH);
-  delay(time_shoot);
-  digitalWrite(laserPin, LOW);
-}
-
-  
