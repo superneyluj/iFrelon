@@ -1,3 +1,4 @@
 # Génération automatique d'échentillon
 
-Ce script a été exécuté à l'aide de JupyterLab, les codes et résultats sont dans le fichier Script Frelon.iynb
+Ce script a été exécuté à l'aide de JupyterLab, les codes et résultats sont dans le fichier *Script Frelon.iynb*.
+
