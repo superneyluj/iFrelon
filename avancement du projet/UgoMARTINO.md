@@ -166,6 +166,89 @@ Semaine 10:
   Programme pour l'ADC avec une photo-résitance
  
  
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 11:
+-
+
+-Réalisation de deux autres cartes électronique afin que chacun puisse travailler de son coté
+-Travail sur le code globale afin de le simplifier 
+-Mise en ouvre d'un nouveau soft complet / commenter (Gestion LED, ServoMoteurs, Laser ...) attente du soft pour la reconnaisance d'image
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 12:
+-
+
+-Problématique: comment piloter le laser ? 
+-Réflexion sur la méthode pour le piloter
+-Mise en ouevre d'un carte électronique temporaire pour le faire fonctionner 
+-Essais 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 13:
+-
+
+-Réalisation du schéma de la nouvelle carte électronique sur EasyEda
+-Réalisation du routage 
+-Dépannage des cartes électroniques soudées précedements car problème de contactes 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 14:
+-
+
+Absent
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 15:
+-
+
+-Préparation de la présentation au Salon de L'agriculture
+Diapo / Pitch / Photo 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 16:
+-
+
+-Réalisation d'une plaquette de test au FabLab 
+-Plaquette de test pour vérifier la précision des moteurs 
+-Réalisation d'un soft test 
+-Réflexion au position du laser sur les moteurs 
+-Mise en place de l'ensemble 
+-Réalisation des premiers tests, constation d'un petite offset à prevoir de 6°
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 17:
+-
+
+Absent 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 18:
+-
+
+-Préparation du prototype globale avec intégration des moteurs + laser + carte électronique 
+-Réalisation d'une vidéo de présentation du projet avec l'équipe Communication de Polytech 
+https://youtu.be/kG1MuGtBWMA
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semaine 19:
+-
+
+Présentation final de tous les projets 
 
 
 
