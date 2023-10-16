@@ -1,4 +1,4 @@
-# Projet Hornet Killer 
+# Projet iFrelon
 
 ## 1er septembre
 - Création du Github et d'un fichier .md pour chacun
